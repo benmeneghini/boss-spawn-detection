@@ -8,6 +8,8 @@ def capture_window():
     while (True):
 
         screenshot = pyautogui.screenshot()
+        screenshot = np.array(screenshot)
+        screenshot = cv2.cvtColor(screenshot, cv2.COLOR_RGB2BGR)
 
         cv2.imshow("Live Window", screenshot)
 
