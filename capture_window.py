@@ -1,13 +1,12 @@
 import cv2
 import numpy as np
-import pyautogui
+from PIL import ImageGrab
 
-
-def capture_window():
+def capture():
 
     while (True):
 
-        screenshot = pyautogui.screenshot()
+        screenshot = ImageGrab.grab()
         screenshot = np.array(screenshot)
         screenshot = cv2.cvtColor(screenshot, cv2.COLOR_RGB2BGR)
 
