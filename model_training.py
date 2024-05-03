@@ -9,4 +9,4 @@ def train_model():
     # Train the model with 2 GPUs ???
 
     # Can add augmentation parameters here to improve model accuracy
-    results = model.train(data='', epochs=20, device='mps')
+    results = model.train(data='boss_v8.yaml', imgsz=640, epochs=20, device='mps', name='yolov8n_custom')
