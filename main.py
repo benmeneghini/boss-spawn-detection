@@ -11,10 +11,6 @@ def run():
     root = tk.Tk()
     root.title("Boss Spawn Detection")
     root.geometry("300x300")
-    
-    # Button for training the model
-    train_button = tk.Button(root, text="Train Model", command=lambda: train_model)
-    train_button.pack(pady=25)
 
     # Button for capturing the window for real-time detection
     capture_button = tk.Button(root, text="Real-time Detection", command=lambda: capture)
