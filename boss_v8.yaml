@@ -3,5 +3,15 @@ train: 'train/images'
 val: 'valid/images'
  
 # class names
-names: 
-  0: 'boss'
+# names: 
+#   1: 'coppinger'
+
+nc: 1
+names: ['coppinger']
+
+roboflow:
+  workspace: 428data
+  project: boss-detector
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/428data/boss-detector/dataset/3
