@@ -1,7 +1,7 @@
-path: data/
+# path: data/
 train: 'train/images'
 val: 'valid/images'
- 
+
 # class names
 # names: 
 #   1: 'coppinger'
